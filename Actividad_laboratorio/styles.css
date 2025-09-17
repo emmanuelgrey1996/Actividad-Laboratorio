@@ -1,0 +1,26 @@
+
+h1 {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.blue {
+  color: blue;
+}
+
+
+#red {
+  color: red;
+}
+
+/* Estilos extras opcionales */
+body {
+  padding: 20px;
+  line-height: 1.4;
+}
+#imagen-ejemplo {
+  max-width: 300px;
+  display: block;
+  margin: 12px 0;
+}
