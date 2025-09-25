@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!----Explicar como se utilizan funciones y etiquetas comunmente usadas, como alert(), console.log(), onclick y <span>, para interactuar cono componentes html--->
+        <h1>Contador de clics</h1>
+    <!----Esta etiqueta es ideal para mostrar fragmentos de texto dinamicos dentro de una oracion. Demostracion el numero de clicks-->   
+    Has hecho click <span id="contador">0 </span>veces.
+    <br>
+    <!--El atributo Onclick permite ejecutar de JavaScript cuando el usuario haga click--->
+    <button onclick="incrementarContador()">Haz click aquí </button>
+
+    <script>
+        //Variable para llevar cuenta de los clicks
+        let contador = 0;
+        // Funcion llamada "cada vez que se haga click"
+        function incrementarContador(){
+            // Aumentamos el valor del contador
+            contador++;
+            //Actualizamos el contenido de la etiqueta spam con un nuevo valor
+            document.getElementById('contador').textContent = contador;
+            //Mostramos un mensaje en la consola
+            console.log('El contador ahora es: ' + contador);
+            //Cuando el contador llegue a 5, mostrar una alerta 
+            if(contador === 5){
+                //alert, abre una ventana emergente en el navegador 
+            alert('¡Has hecho click 5 veces!')
+            }
+        }
+    </script>
+    <br>
+    <hr>
+    <br>
+    <h2>Suscribete!!!!</h2>
+    <br>
+    <!----Formulario simle con 3 campos-->
+    Nombre : 
+    <input type="text" id="nombre">
+    <span id="mensaje" style="color:brown;"></span>
+    <br>
+    <button type="button" onclick="enviar()">Enviar</button>
+    <script>
+        function enviar(){
+            //Tomamos el valor del input
+            const nombre = document.getElementById('nombre').value;
+            //Mostramos el nombre en la consola 
+            console.log('Nombre ingresado: ' + nombre);
+            // Si el campo esta vacío, pedimos que lo complete 
+            if(nombre.trim() === ''){
+                alert('Por favor escribe tu noombre completo');
+                return;
+            }
+            //Actualizar el texto de Span
+            document.getElementById('mensaje').textContent = 'Hola, ' + nombre + ' Gracias por suscribirte.';
+            //Mostramos alerta de confirmación
+            alert('Registro exitoso,' + nombre)
+
+        }
+        
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Fuente futurista */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0a0a; /* fondo oscuro */
+  color: #c0c0c0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar futurista */
+.navbar {
+  background: linear-gradient(90deg, #0f0f0f, #1a1a1a);
+  border-bottom: 2px solid #00ffff;
+  box-shadow: 0 0 15px #00ffff;
+}
+.navbar-brand, .nav-link {
+  color: #00ffff !important;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #ff00ff !important;
+}
+
+/* Toolbar superior */
+header .btn {
+  border: 1px solid #00ffff;
+  background-color: transparent;
+  color: #00ffff;
+}
+header .btn:hover {
+  background-color: #00ffff;
+  color: #0a0a0a;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(0,255,255,0.05), rgba(255,0,255,0.05));
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero h1 {
+  font-size: 4rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+  animation: neon 1.5s infinite alternate;
+}
+.hero .lead {
+  color: #c0c0c0;
+  font-size: 1.4rem;
+}
+
+/* Cards */
+.card {
+  background-color: #111;
+  border: 1px solid #00ffff;
+  color: #c0c0c0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff00ff;
+}
+.card-title {
+  color: #00ffff;
+}
+.card-text {
+  color: #c0c0c0;
+}
+
+/* Botones */
+.btn-success, .btn-outline-success {
+  border-color: #00ffff;
+  color: #00ffff;
+}
+.btn-success:hover, .btn-outline-success:hover {
+  background-color: #00ffff;
+  color: #0a0a0a;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  border-top: 2px solid #00ffff;
+}
+
+/* Animación Neon */
+@keyframes neon {
+  0%, 100% { text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff; }
+  50% { text-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff; }
+}

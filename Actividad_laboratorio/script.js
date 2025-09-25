@@ -11,7 +11,7 @@ if (h1s.length > 1) {
   h1s[1].style.color = 'orange';
 }
 
-// También dejamos un botón para que puedas activarlo manualmente
+
 const orangeBtn = document.getElementById('orange-btn');
 if (orangeBtn && h1s.length > 1) {
   orangeBtn.addEventListener('click', () => {
@@ -19,7 +19,7 @@ if (orangeBtn && h1s.length > 1) {
   });
 }
 
-// Añadir comportamiento clic al encabezado para cambiar a marrón
+
 const clickable = document.getElementById('clickable-heading');
 if (clickable) {
   clickable.addEventListener('click', () => {

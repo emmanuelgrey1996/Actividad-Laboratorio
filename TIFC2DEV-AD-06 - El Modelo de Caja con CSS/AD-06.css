@@ -1,0 +1,70 @@
+/* *==================== Estilos generales ============ */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:cornflowerblue;
+    padding: 20px;
+}
+
+/** =========== Estilos del contenedor div ========== */
+/** div es un contenedor de bloque por defecto ( display:block) */
+.contenedor{
+    background-color: crimson;/* color de fondo */
+    border: 2px solid; color:darkorange /* borde visible */
+    padding: 15px; /* espacio interno entre el borde y el contenido */
+    margin-bottom: 20px; /* espacio externo entre otros contenidos*/
+}
+
+/* *=========== Box Model ============= */
+/* Aqui vamos a mostrar 4 partes del modelo de caja:
+-Content: el texto 
+-Padding: espacio entre el borde y el contenido
+-Border: Linea alrededor del padding 
+-Margin: espacio fuera del borde */
+.caja{
+    width: 250px;/* ancho del contenido */
+    padding: 20px; /* espacio interno */
+    border: 4px solid chocolate;/* borde visible */
+    margin: 25px;/* espacio externo */
+    background-color: cadetblue;/* color de fondo */
+    border-radious: 8px; 
+    color:darkgreen;
+}
+
+/* *=========== Tamaño, Posicion y Visualización ============= */
+.caja-pequeña{
+    width: 300px;
+    height: 60px;
+    background-color: antiquewhite;
+    border: 2px solid #4caf50;
+    margin-bottom: 15px;
+    text-align: center; /* centra el texto verticalmente */
+    line-height: 60px;
+    border-radius: 8px;
+}
+
+/* * Posicion Relativa: podemos mover la caja de su posicion normal */
+.caja-relativa{
+    position: relative;/* necesario para usar top/left*/
+    top: 10px; /*mueve 10 px hacia abajo*/
+    left: 20px; /*mueve 20 px hacia la derecha*/
+    width: 380px;
+    height: 60px;
+    background-color: chartreuse;
+    border: 2px solid #219621;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 60px;
+     border-radius: 8px;
+}
+
+/* Visualización: inline-block permite que se comporte en linea pero con propiedades de bloque*/
+.caja-inline{
+    display: inline-block;/* se alinea en la misma linea que otros elementos*/
+    width: 300px;
+    height: 50px;
+    background-color: coral;
+    border: 2px solid #e91e63;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 8px;
+}

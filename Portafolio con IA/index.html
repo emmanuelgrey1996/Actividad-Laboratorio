@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Emmanuel Grey</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Canvas para efecto Matrix -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Navbar -->
+ <header>
+  <!-- Toolbar superior con botones -->
+  <div class="d-flex justify-content-end gap-2 p-2 bg-dark shadow position-fixed w-100 top-0 z-3">
+    <a href="cv/EmmanuelGreyCV.pdf" download class="btn btn-success btn-sm shadow">
+      <i class="bi bi-download me-1"></i>Descargar CV
+    </a>
+    <button class="btn btn-info btn-sm shadow" id="toggleLang">
+      <i class="bi bi-globe me-1"></i>English
+    </button>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mt-5 shadow-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Emmanuel Grey</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+  <main>
+    <!-- Hero -->
+    <section class="hero d-flex align-items-center text-center py-5">
+      <div class="container">
+        <h1 class="fw-bold display-4 text-success text-shadow" id="hero-title">Emmanuel Grey</h1>
+        <p class="lead text-success" id="hero-lead">Desarrollador Jr. Java Full-Stack | Apasionado por la tecnología y la innovación</p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="#contact" class="btn btn-success btn-lg shadow"><i class="bi bi-envelope-fill me-2"></i>Contáctame</a>
+          <a href="#projects" class="btn btn-outline-success btn-lg shadow"><i class="bi bi-laptop-fill me-2"></i>Proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+   <section id="about" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center text-success mb-5 display-5" id="about-title">Sobre mí</h2>
+    
+    <div class="row g-4 align-items-center">
+      <!-- Card principal de descripción -->
+      <div class="col-md-6">
+        <div class="card bg-dark border-success shadow-lg h-100">
+          <div class="card-body">
+            <h5 class="card-title text-success">Hola, soy Emmanuel Grey</h5>
+            <p class="card-text text-light fs-5">Soy un desarrollador en formación especializado en Java Full-Stack. Me gusta crear soluciones digitales efectivas con un enfoque en diseño limpio, responsivo y funcional. Busco seguir creciendo profesionalmente y aportar valor en cada proyecto.</p>
+            <button type="button" class="btn btn-outline-success shadow" data-bs-toggle="tooltip" data-bs-placement="right" title="Más info sobre mi experiencia">
+              Más info
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards de info adicional -->
+      <div class="col-md-6">
+        <div class="row g-3">
+          <div class="col-12">
+            <div class="card bg-dark border-success shadow-sm h-100 text-center p-3">
+              <h6 class="text-success">📍 Ubicación</h6>
+              <p class="text-light mb-0">Querétaro, México</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card bg-dark border-success shadow-sm h-100 text-center p-3">
+              <h6 class="text-success">🎓 Educación</h6>
+              <p class="text-light mb-0">Bootcamp Generation</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card bg-dark border-success shadow-sm h-100 text-center p-3">
+              <h6 class="text-success">💻 Tecnologías</h6>
+              <p class="text-light mb-0">HTML | CSS | JavaScript | Java</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de habilidades -->
+    <div class="row mt-5">
+      <div class="col-md-4 mb-3">
+        <h6 class="text-success">Java</h6>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h6 class="text-success">JavaScript</h6>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h6 class="text-success">CSS / HTML</h6>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Proyectos -->
+    <section id="projects" class="bg-dark py-5">
+      <div class="container">
+        <h2 class="text-center text-success mb-5" id="projects-title">Proyectos</h2>
+        <div class="row g-4">
+          <article class="col-md-4">
+            <div class="card bg-black border-success shadow-lg h-100">
+              <img src="imagenes/proyecto1.jpg" class="card-img-top" alt="Proyecto 1">
+              <div class="card-body">
+                <h5 class="card-title text-success">Proyecto 1 <span class="badge bg-success">JS</span></h5>
+                <p class="card-text text-light">Proyecto con tecnología moderna y diseño responsivo.</p>
+                <a href="#" class="btn btn-outline-success"><i class="bi bi-eye-fill me-2"></i>Ver más</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card bg-black border-success shadow-lg h-100">
+              <img src="imagenes/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+              <div class="card-body">
+                <h5 class="card-title text-success">Proyecto 2 <span class="badge bg-success">Java</span></h5>
+                <p class="card-text text-light">Proyecto de backend con integración front-end responsivo.</p>
+                <a href="#" class="btn btn-outline-success"><i class="bi bi-eye-fill me-2"></i>Ver más</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card bg-black border-success shadow-lg h-100">
+              <img src="imagenes/proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+              <div class="card-body">
+                <h5 class="card-title text-success">Proyecto 3 <span class="badge bg-success">Full-Stack</span></h5>
+                <p class="card-text text-light">Proyecto completo con enfoque en escalabilidad y UX/UI.</p>
+                <a href="#" class="btn btn-outline-success"><i class="bi bi-eye-fill me-2"></i>Ver más</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-5">
+      <div class="container text-center">
+        <h2 class="text-success mb-4" id="contact-title">Contacto</h2>
+        <p class="text-light" id="contact-text">Encuéntrame en mis redes profesionales:</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="https://www.linkedin.com/in/emmanuelgrey/" target="_blank" class="btn btn-linkedin btn-lg shadow"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+          <a href="https://github.com/emmanuelgrey1996" target="_blank" class="btn btn-github btn-lg shadow"><i class="bi bi-github me-2"></i>GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-success py-3 shadow-lg">
+    <p>&copy; 2025 Emmanuel Grey | Desarrollador Jr. Java Full-Stack</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script Matrix -->
+  <script src="./matrix.js"></script>
+  <script>
+    // Inicializa tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(t => new bootstrap.Tooltip(t));
+
+    // Toggle idioma
+    const toggleLang = document.getElementById('toggleLang');
+    let isEnglish = false;
+
+    toggleLang.addEventListener('click', () => {
+      isEnglish = !isEnglish;
+      document.documentElement.lang = isEnglish ? 'en' : 'es';
+
+      document.getElementById('hero-title').textContent = isEnglish ? 'Hello, I am Emmanuel Grey' : 'Hola, soy Emmanuel Grey';
+      document.getElementById('hero-lead').textContent = isEnglish ? 'Junior Java Full-Stack Developer | Passionate about technology and innovation' : 'Desarrollador Jr. Java Full-Stack | Apasionado por la tecnología y la innovación';
+      document.getElementById('about-title').textContent = isEnglish ? 'About Me' : 'Sobre mí';
+      document.getElementById('about-text').textContent = isEnglish ? 'I am a developer in training specialized in Java Full-Stack. I like creating effective digital solutions with a focus on clean, responsive, and functional design. I aim to keep growing professionally and contribute value in every project.' : 'Soy un desarrollador en formación especializado en Java Full-Stack. Me gusta crear soluciones digitales efectivas con un enfoque en diseño limpio, responsivo y funcional. Busco seguir creciendo profesionalmente y aportar valor en cada proyecto.';
+      document.getElementById('projects-title').textContent = isEnglish ? 'Projects' : 'Proyectos';
+      document.getElementById('contact-title').textContent = isEnglish ? 'Contact' : 'Contacto';
+      document.getElementById('contact-text').textContent = isEnglish ? 'Find me on my professional networks:' : 'Encuéntrame en mis redes profesionales:';
+      toggleLang.textContent = isEnglish ? 'Español' : 'English';
+    });
+  </script>
+</body>
+</html>

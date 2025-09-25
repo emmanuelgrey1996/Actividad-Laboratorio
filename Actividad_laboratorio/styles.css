@@ -1,15 +1,15 @@
-
+/* Hacer que todos los H1 sean verdes (regla global) */
 h1 {
   color: green;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* Clase .blue para texto azul */
 .blue {
   color: blue;
 }
 
-
+/* ID #red en rojo (tiene mayor especificidad que h1) */
 #red {
   color: red;
 }

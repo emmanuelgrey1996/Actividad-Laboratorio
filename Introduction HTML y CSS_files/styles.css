@@ -1,0 +1,47 @@
+/* *Comentarios en CSS*/
+/* ? *Selector universal: Aplicar un margen y relleno de base para todos los elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Parte del modelo de caja*/
+}
+/* *Selector ID: estilizar el contenido principal*/
+/* *Signo de # para ID*/
+#card{
+       width: 300px; /* ancho de de la tarjeta*/
+       padding: 20px; /* relleno interno */
+       margin: 50px auto;/* centramos la tarjeta horizontalmente */
+       border: 2px solid #0077b6; /* borde visible*/
+       border-radius: 12px; /* esquinas redondeadas */
+       box-shadow:#2ab600 0 4px 8px rgba(0, 0, 0, 0.982); /* sombra para dar relieve */
+       background-color:cornsilk  /* color de fondo */
+   /* Selector por clase: . para mandarla llamar */    
+}
+.nombre{
+       font-size: 24px;
+       color:blue;
+       margin-bottom: 10px;
+}
+.description{
+    font-size: 16px;
+    color:chartreuse
+    margin-bottom: 15px;
+}
+/* *Selector por etiqueta: todo los enlaces (a) tendran el mismo estilo*/
+a{
+    text-decoration: none; /* quita el subrayado del enlace*/
+}
+.link{
+    display: inline-block;
+    padding: 8px 12px;
+    background-color:darkgrey;
+    color:azure;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+/*Pseudo-clase hover: cambio de color cuando pase el mouse*/
+.link:hover{
+    background-color: darkslateblue;
+    
+}
